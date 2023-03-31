@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-form{
+    margin-bottom: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.serach-form label{
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+#search{
+    padding: 10px 30px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search-input{
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+
+.main-section{
+    margin-top: 200px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hourly-data-section{
+    text-align: center;
+}
+
+.hourly-data-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px;
+    padding: 20px 60px;
+    width: 400px;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 35px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hourly-img{
+    width: 100px;
+    height: auto;
+}
+
+.hourly-time{
+    display: flex;
+    align-items: center;
+}
+
+.hourly-temps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
